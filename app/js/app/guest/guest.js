@@ -93,7 +93,7 @@ export const guest = (() => {
    * @returns {Promise<void>}
    */
   const slide = async () => {
-    const interval = 2000;
+    const interval = 4000;
     const slides = document.querySelectorAll(".slide-desktop");
 
     if (!slides || slides.length === 0) {
