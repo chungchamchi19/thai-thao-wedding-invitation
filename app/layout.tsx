@@ -46,15 +46,21 @@ export default function RootLayout({
           property="og:keywords"
           content="wedding invitation, digital wedding, online wedding site, invitation template, Dinh Chung, Pham Vui, wedding website"
         />
-        <meta property="og:image" content="https://ulems.my.id/assets/images/bg.webp" />
-        <meta property="og:image:secure_url" content="https://ulems.my.id/assets/images/bg.webp" />
+        <meta
+          property="og:image"
+          content="https://chung-vui-wedding-invitation.vercel.app/assets/images/GAU02042-2.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://chung-vui-wedding-invitation.vercel.app/assets/images/GAU02042-2.jpg"
+        />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content="Online Wedding Invitation of Dinh Chung and Pham Vui" />
         <meta property="og:image:width" content="980" />
         <meta property="og:image:height" content="980" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:url" content="https://ulems.my.id" />
+        <meta property="og:url" content="https://chung-vui-wedding-invitation.vercel.app" />
         <meta property="og:site_name" content="Online Wedding Invitation of Dinh Chung and Pham Vui" />
         {/* Appearance */}
         <meta name="mobile-web-app-capable" content="yes" />
@@ -62,9 +68,18 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark light" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="canonical" href="https://ulems.my.id/" />
-        <link rel="icon" type="image/png" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png" />
-        <link rel="apple-touch-icon" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png" />
+        <link rel="canonical" href="https://chung-vui-wedding-invitation.vercel.app/" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="https://chung-vui-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="192x192"
+          href="https://chung-vui-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
+        />
         {/* Preconnect CDN */}
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
