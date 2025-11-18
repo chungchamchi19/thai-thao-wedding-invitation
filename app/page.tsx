@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import ImageModal from "./components/ImageModal";
 import Progress from "./components/Progress";
 import ControlButtons from "./components/ControlButtons";
+import { Suspense } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -16,12 +17,12 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Progress></Progress>
       <Welcome></Welcome>
       <Content></Content>
       <ImageModal></ImageModal>
       <ControlButtons></ControlButtons>
-    </>
+    </Suspense>
   );
 }
