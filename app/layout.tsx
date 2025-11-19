@@ -19,49 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en" data-bs-theme="dark">
       <head>
-        {/* Common Tag */}
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Online Wedding Invitation of Đinh Chung and Phạm Vui</title>
-        {/* SEO Tag */}
-        <meta name="author" content="dewanakl" />
-        <meta name="language" content="en" />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="googlebot" content="index, follow, max-image-preview:large" />
-        <meta name="title" content="Online Wedding Invitation of Đinh Chung and Phạm Vui" />
-        <meta
-          name="description"
-          content="Celebrate the wedding of Đinh Chung and Phạm Vui with this elegant digital invitation."
-        />
-        <meta
-          name="keywords"
-          content="wedding invitation, digital wedding, online wedding site, invitation template, Đinh Chung, Phạm Vui, wedding website"
-        />
-        <meta property="og:title" content="Online Wedding Invitation of Đinh Chung and Phạm Vui" />
-        <meta
-          property="og:description"
-          content="Celebrate the wedding of Đinh Chung and Phạm Vui with this elegant digital invitation."
-        />
-        <meta
-          property="og:keywords"
-          content="wedding invitation, digital wedding, online wedding site, invitation template, Đinh Chung, Phạm Vui, wedding website"
-        />
-        <meta
-          property="og:image"
-          content="https://chung-vui-wedding-invitation.vercel.app/assets/images/GAU02042-2.jpg"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://chung-vui-wedding-invitation.vercel.app/assets/images/GAU02042-2.jpg"
-        />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:alt" content="Online Wedding Invitation of Đinh Chung and Phạm Vui" />
-        <meta property="og:image:width" content="980" />
-        <meta property="og:image:height" content="980" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:url" content="https://chung-vui-wedding-invitation.vercel.app" />
-        <meta property="og:site_name" content="Online Wedding Invitation of Đinh Chung and Phạm Vui" />
         {/* Appearance */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Wedding of Đinh Chung &amp; Phạm Vui" />

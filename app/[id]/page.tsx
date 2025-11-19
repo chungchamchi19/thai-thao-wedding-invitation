@@ -1,3 +1,4 @@
+import MetaTags from "../components/MetaTag";
 import Home from "../page";
 
 type Props = {
@@ -9,7 +10,12 @@ type Props = {
 const Page = async ({ params }: Props) => {
   const { id } = await params;
 
-  return <Home name={decodeURIComponent(id) || "My Friend"}></Home>;
+  return (
+    <>
+      <MetaTags />
+      <Home name={decodeURIComponent(id) || "My Friend"}></Home>
+    </>
+  );
 };
 
 export default Page;

@@ -8,6 +8,7 @@ import ImageModal from "./components/ImageModal";
 import Progress from "./components/Progress";
 import ControlButtons from "./components/ControlButtons";
 import { Suspense } from "react";
+import MetaTags from "./components/MetaTag";
 
 export default function Home({ name }: { name: string }) {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function Home({ name }: { name: string }) {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
+      <MetaTags></MetaTags>
       <Progress name={name}></Progress>
       <Welcome name={name}></Welcome>
       <Content name={name}></Content>
