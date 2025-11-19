@@ -1,5 +1,5 @@
+import Invitation from "../components/Invitation";
 import MetaTags from "../components/MetaTag";
-import Home from "../page";
 
 type Props = {
   params: {
@@ -13,7 +13,7 @@ const Page = async ({ params }: Props) => {
   return (
     <>
       <MetaTags />
-      <Home name={decodeURIComponent(id) || "My Friend"}></Home>
+      <Invitation name={decodeURIComponent(id) || "My Friend"}></Invitation>
     </>
   );
 };

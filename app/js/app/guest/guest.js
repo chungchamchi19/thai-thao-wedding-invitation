@@ -308,10 +308,8 @@ export const guest = (() => {
       document.getElementById("information")?.remove();
     }
 
-    console.log(Date.now() - window.startTime);
-
     const clearLoadingId = setInterval(async () => {
-      if (Date.now() - window.startTime > 3_000) {
+      if (Date.now() - window.startTime > 5_000) {
         clearTimeout(clearLoadingId);
         // wait until welcome screen is show.
         await util.changeOpacity(document.getElementById("welcome"), true);
