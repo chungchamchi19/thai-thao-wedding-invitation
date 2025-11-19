@@ -344,7 +344,7 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                   }}
                   width="560"
                   height="306"
-                  src="https://www.youtube.com/embed/NKwYBZqX_w4?si=ZPtEUojCNcEbM428&muted=1&modestbranding=1"
+                  src="https://www.youtube.com/embed/NKwYBZqX_w4?si=ZPtEUojCNcEbM428&mute=1&modestbranding=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
