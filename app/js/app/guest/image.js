@@ -118,7 +118,12 @@ export const image = (() => {
   const init = () => {
     c = cache("image").withForceCache();
     images = document.querySelectorAll("img");
-    images.forEach(progress.add);
+    images.forEach((img, i) => {
+      if (i > 20) {
+        return;
+      }
+      progress.add(img);
+    });
 
     return {
       load,
