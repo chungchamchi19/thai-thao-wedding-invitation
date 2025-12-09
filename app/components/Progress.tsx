@@ -14,7 +14,7 @@ const Progress = ({ name }: { name?: string }) => {
         <div className="d-flex flex-column width-loading text-center">
           <img
             src="./assets/images/placeholder.webp"
-            data-src="./assets/images/GAU02042-2.jpg"
+            data-src="./assets/images/vvvv.jpg"
             fetchPriority="high"
             className="img-fluid mb-3 mx-auto object-fit-cover opacity-0"
             alt="icon"
@@ -33,17 +33,8 @@ const Progress = ({ name }: { name?: string }) => {
             <div className="flex items-center mt-1 absolute right-2">❤️</div>
           </div>
           <p className="z-0 d-none mt-4 text-theme-auto text-2xl" id="progress-info">
-            Dear {name || "my friend"}. Hope you&rsquo;re ready for something awesome!
+            Gửi {name || "bạn"} thân mến!
           </p>
-        </div>
-      </div>
-      <div className="text-center position-fixed w-100" style={{ bottom: "8%", left: 0 }}>
-        <div className="d-flex flex-column">
-          <small className="text-secondary">from</small>
-          <small className="text-theme-auto">
-            <i className="fa-brands fa-github me-1" />
-            chungchamchi19
-          </small>
         </div>
       </div>
     </div>

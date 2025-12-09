@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <MetaTags></MetaTags>
-      <Invitation name={"My Friend"}></Invitation>
+      <Invitation name={"bạn"}></Invitation>
     </Suspense>
   );
 }

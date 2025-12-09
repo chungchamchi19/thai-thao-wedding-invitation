@@ -256,8 +256,8 @@ export const guest = (() => {
     const url = new URL("https://calendar.google.com/calendar/render");
     const data = new URLSearchParams({
       action: "TEMPLATE",
-      text: "The Wedding of Chung & Vui",
-      dates: `${formatDate("2025-11-30 08:00")}/${formatDate("2025-11-30 11:00")}`,
+      text: "The Wedding of Thái & Thảo",
+      dates: `${formatDate("2025-12-28 10:00")}/${formatDate("2025-12-28 12:00")}`,
       details:
         "Dear friends, we are honored to invite you to our wedding ceremony. We hope you can join us to share in our joy and celebrate this special day with us.",
       location: "Cau Vat, Dong Bang, Hung Yen",

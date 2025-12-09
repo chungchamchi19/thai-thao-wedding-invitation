@@ -9,7 +9,7 @@ type Props = {
 
 const Page = async ({ params }: Props) => {
   const { id } = await params;
-  const name = decodeURIComponent(id) || "My Friend";
+  const name = decodeURIComponent(id) || "bạn";
   return (
     <>
       <MetaTags
@@ -18,7 +18,7 @@ const Page = async ({ params }: Props) => {
         `}
         description={`Dear ${name}, we would be so happy if you could join us on our special day. Open this to see a little piece of our happiness!`}
       />
-      <Invitation name={decodeURIComponent(id) || "My Friend"}></Invitation>
+      <Invitation name={decodeURIComponent(id) || "bạn"}></Invitation>
     </>
   );
 };

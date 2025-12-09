@@ -17,25 +17,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-bs-theme="dark">
+    <html lang="en" data-bs-theme="light">
       <head>
         {/* Appearance */}
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="Wedding of Đinh Chung &amp; Phạm Vui" />
+        <meta name="apple-mobile-web-app-title" content="Wedding of Việt Thái &amp; Thanh Thảo" />
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark light" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="canonical" href="https://chung-vui-wedding-invitation.vercel.app/" />
+        <link rel="canonical" href="https://thai-thao-wedding-invitation.vercel.app/" />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="https://chung-vui-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
+          href="https://thai-thao-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="192x192"
-          href="https://chung-vui-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
+          href="https://thai-thao-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
         />
         {/* Preconnect CDN */}
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
@@ -47,6 +47,7 @@ export default function RootLayout({
         {/* Preload Resources */}
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" as="style" />
         <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet"></link>
         <link
           rel="preload"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -96,7 +97,7 @@ export default function RootLayout({
         data-url="https://api.ulems.my.id/"
         data-audio="./assets/music/pure-love-304010.mp3"
         data-confetti="true"
-        data-time="2025-11-30 08:00:00"
+        data-time="2025-12-28 10:00:00"
         data-aos-easing="ease"
         data-aos-duration="400"
         data-aos-delay="0"

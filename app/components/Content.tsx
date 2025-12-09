@@ -3,10 +3,37 @@
 import { useEffect } from "react";
 import { upperFirstLetter } from "../utils/string";
 
-const Content = ({ name = "my friend" }: { name: string }) => {
+const Content = ({ name = "bạn" }: { name: string }) => {
   const openImageModal = (e: React.MouseEvent<HTMLImageElement>) => {
     window.undangan.guest.modal(e.target);
   };
+
+  const desktopImages = [
+    "./assets/images/thai-1.jpg",
+    "./assets/images/thai-4.jpg",
+    "./assets/images/thai-5.jpg",
+    "./assets/images/vvvv.jpg",
+    "./assets/images/thai-2.jpg",
+    "./assets/images/thai-7.jpg",
+  ];
+
+  const weddingImages = [
+    "./assets/images/thai-1.jpg",
+    "./assets/images/thai-4.jpg",
+    "./assets/images/thai-5.jpg",
+    "./assets/images/thai-9.jpg",
+    "./assets/images/thai-11.jpg",
+    "./assets/images/vvvv.jpg",
+  ];
+
+  const traditionalImages = [
+    "./assets/images/thai-2.jpg",
+    "./assets/images/thai-3.jpg",
+    "./assets/images/thai-6.jpg",
+    "./assets/images/thai-7.jpg",
+    "./assets/images/thai-8.jpg",
+    "./assets/images/thai-10.jpg",
+  ];
 
   const showStory = (e: React.MouseEvent<HTMLButtonElement>) => {
     window.undangan.guest.showStory(e.currentTarget.parentNode);
@@ -28,113 +55,25 @@ const Content = ({ name = "my friend" }: { name: string }) => {
         <div className="position-relative bg-white-black d-flex justify-content-center align-items-center vh-100">
           <div className="d-flex position-absolute w-100 h-100">
             <div className="position-relative overflow-hidden vw-100">
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU03745.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/placeholder.webp"
-                  data-src="./assets/images/GAU02070.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU02236.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU02976.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU03649.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU03899.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%", objectPosition: "0px 75%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU04059.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 60%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU04072.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 70%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU04174.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "30%", objectPosition: "0px 70%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU04494.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 70%" }}
-                />
-              </div>
-              <div className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
-                <img
-                  src="./assets/images/GAU03745.jpg"
-                  data-src="./assets/images/GAU04565.jpg"
-                  alt="bg"
-                  className="bg-cover-home"
-                  style={{ maskImage: "none", opacity: "50%", objectPosition: "0px 90%" }}
-                />
-              </div>
+              {desktopImages.map((src) => (
+                <div key={src} className="position-absolute h-100 w-100 slide-desktop" style={{ opacity: 0 }}>
+                  <img
+                    src="./assets/images/vvvv.jpg"
+                    data-src={src}
+                    alt="bg"
+                    className="bg-cover-home"
+                    style={{ maskImage: "none", opacity: "50%", objectPosition: "0px -350px" }}
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className="text-center p-4 bg-overlay-auto rounded-5">
             <h2 className="font-esthetic mb-4" style={{ fontSize: "2rem" }}>
-              Đinh Chung &amp; Phạm Vui
+              Việt Thái &amp; Thanh Thảo
             </h2>
             <p className="m-0" style={{ fontSize: "1rem" }}>
-              Sunday, November 30th 2025
+              Chủ nhật, ngày 28 tháng 12 năm 2025
             </p>
           </div>
         </div>
@@ -152,27 +91,27 @@ const Content = ({ name = "my friend" }: { name: string }) => {
           {/* Home */}
           <section id="home" className="bg-light-dark position-relative overflow-hidden p-0 m-0">
             <img
-              src="./assets/images/GAU02042-2.jpg"
-              data-src="./assets/images/GAU02042-2.jpg"
+              src="./assets/images/vvvv.jpg"
+              data-src="./assets/images/vvvv.jpg"
               alt="bg"
               className="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home"
             />
             <div className="position-relative text-center bg-overlay-auto" style={{ backgroundColor: "unset" }}>
-              <h1 className="pt-5 pb-4 fw-medium" style={{ fontSize: "2.25rem" }}>
-                Wedding Invitation
+              <h1 className="pt-5 pb-4 fw-medium font-esthetic" style={{ fontSize: "2.25rem" }}>
+                Thiệp Mời
               </h1>
               <img
-                src="./assets/images/GAU02042-2.jpg"
-                data-src="./assets/images/GAU02042-2.jpg"
+                src="./assets/images/vvvv.jpg"
+                data-src="./assets/images/vvvv.jpg"
                 alt="bg"
                 onClick={openImageModal}
                 className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer object-top"
               />
               <h2 className="font-esthetic my-4" style={{ fontSize: "2.25rem" }}>
-                Đinh Chung &amp; Phạm Vui
+                Việt Thái &amp; Thanh Thảo
               </h2>
               <p className="my-2" style={{ fontSize: "1.25rem" }}>
-                Sunday, November 30th 2025
+                Chủ nhật, ngày 28 tháng 12 năm 2025
               </p>
               <button
                 className="btn btn-outline-auto btn-sm shadow rounded-pill px-3 py-1"
@@ -211,9 +150,10 @@ const Content = ({ name = "my friend" }: { name: string }) => {
               Assalamualaikum Warahmatullahi Wabarakatuh
             </h2> */}
             <p className="pb-4 px-2 m-0">
-              With heartfelt respect, we invite you to join us as we celebrate our marriage. Your presence would bring
-              us great joy on this special day, as we begin a new chapter of our lives together. We truly hope you can
-              come and share in the happiness and unforgettable moments of our wedding.
+              Chúng mình xin gửi lời mời trân trọng và thân thương đến bạn. Rất mong bạn có thể đến chung vui cùng chúng
+              mình trong ngày trọng đại này. Sự hiện diện của bạn sẽ làm đám cưới trở nên ý nghĩa và trọn vẹn hơn, khi
+              chúng mình bắt đầu bước sang một hành trình mới bên nhau. Hy vọng thật nhiều rằng bạn sẽ đến và cùng chúng
+              mình lưu lại những khoảnh khắc hạnh phúc, đáng nhớ nhất.
             </p>
             <div className="overflow-x-hidden pb-4">
               <div className="position-relative">
@@ -235,16 +175,16 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                 <div data-aos="fade-right" data-aos-duration={2000} className="pb-1">
                   <img
                     src="./assets/images/placeholder.webp"
-                    data-src="./assets/images/groom.png"
+                    data-src="./assets/images/groom.jpg"
                     alt="cowo"
                     onClick={openImageModal}
                     className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer"
                   />
                   <h2 className="font-esthetic m-0" style={{ fontSize: "2.125rem" }}>
-                    Đinh Chung
+                    Việt Thái
                   </h2>
                   <p className="mt-3 mb-1" style={{ fontSize: "1.25rem" }}>
-                    Groom
+                    Chú Rể
                   </p>
                 </div>
                 {/* Love animation */}
@@ -274,6 +214,7 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                     width={40}
                     height={40}
                     fill="currentColor"
+                    D
                     className="opacity-50"
                     data-time={3000}
                     data-class="animate-love"
@@ -285,19 +226,19 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                 <div data-aos="fade-left" data-aos-duration={2000} className="pb-1">
                   <img
                     src="./assets/images/placeholder.webp"
-                    data-src="./assets/images/bride-5.png"
+                    data-src="./assets/images/bride.jpg"
                     alt="cewe"
                     onClick={openImageModal}
                     className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer"
                     style={{
-                      objectPosition: "0px -55px",
+                      objectPosition: "0px -10px",
                     }}
                   />
                   <h2 className="font-esthetic m-0" style={{ fontSize: "2.125rem" }}>
-                    Phạm Vui
+                    Thanh Thảo
                   </h2>
                   <p className="mt-3 mb-1" style={{ fontSize: "1.25rem" }}>
-                    Bride
+                    Cô âu
                   </p>
                 </div>
                 {/* Love animation */}
@@ -329,143 +270,8 @@ const Content = ({ name = "my friend" }: { name: string }) => {
             </svg>
           </div>
           {/* Firman Allah Subhanahu Wa Ta&apos;ala */}
-          {/* Love Story */}
-          <section className="bg-light-dark pt-2 pb-4">
-            <div className="container">
-              <div className="bg-theme-auto rounded-5 shadow p-3">
-                <h2 className="font-esthetic text-center py-2 mb-2" style={{ fontSize: "2.125rem" }}>
-                  Our Love Story
-                </h2>
-                {/* Jika tidak ingin menggunakan video, hapus seluruh tag dengan id="video-love-story" di bawah ini. */}
-                {/* If you don't want to use the video, remove the entire tag with id="video-love-story" below. */}
-                <iframe
-                  style={{
-                    width: "100%",
-                  }}
-                  width="560"
-                  height="306"
-                  src="https://www.youtube.com/embed/NKwYBZqX_w4?si=ZPtEUojCNcEbM428&mute=1&modestbranding=1"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-                <div className="position-relative">
-                  <div
-                    className="position-absolute d-flex justify-content-center align-items-center top-50 start-50 translate-middle w-100 h-100 bg-overlay-auto z-3"
-                    style={{ opacity: "100%", backgroundColor: "unset" }}
-                  >
-                    <button className="btn btn-outline-auto btn-sm rounded-4 shadow-sm" onClick={showStory}>
-                      <i className="fa-solid fa-heart fa-bounce me-2" />
-                      Read Story
-                    </button>
-                  </div>
-                  <div className="overflow-y-scroll overflow-x-hidden p-2 with-scrollbar" style={{ height: "15rem" }}>
-                    <div className="row">
-                      <div className="col-auto position-relative">
-                        <p
-                          className="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1"
-                          style={{ width: "2rem", height: "2rem" }}
-                        >
-                          1
-                        </p>
-                        <hr className="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none" />
-                      </div>
-                      <div className="col mt-1 mb-3 ps-0">
-                        <p className="fw-bold mb-2">💼 A Simple First Meeting</p>
-                        <p className="small mb-0">
-                          Our story began back in secondary school, a time when life was simple and full of curiosity.
-                          It was there, among the classrooms and playgrounds, that we first met. What started as
-                          friendship slowly blossomed into the tender, innocent love of youth — the kind of love that
-                          makes your heart race at a glance and turns ordinary school days into something unforgettable.
-                          Those early years were full of shy smiles, secret notes, and the excitement of discovering
-                          each other in a world that still felt so big.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-auto position-relative">
-                        <p
-                          className="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1"
-                          style={{ width: "2rem", height: "2rem" }}
-                        >
-                          2
-                        </p>
-                        <hr className="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none" />
-                      </div>
-                      <div className="col mt-1 mb-3 ps-0">
-                        <p className="fw-bold mb-2">💞 Affection Tested by Challenges</p>
-                        <p className="small mb-0">
-                          As we grew older, our journey continued through university. Five years of shared lectures,
-                          study sessions, laughter, and tears brought us closer than we could have imagined. We
-                          celebrated Christmas together, exchanged silly gifts, and created countless inside jokes that
-                          only we could understand. There were moments of joy, moments of frustration, and even moments
-                          of sadness, but every experience deepened our bond and shaped the love that had begun so long
-                          ago in the corridors of secondary school.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-auto position-relative">
-                        <p
-                          className="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1"
-                          style={{ width: "2rem", height: "2rem" }}
-                        >
-                          3
-                        </p>
-                        <hr className="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none" />
-                      </div>
-                      <div className="col mt-1 mb-3 ps-0">
-                        <p className="fw-bold mb-2">🛵 Our Vietnam Memories</p>
-                        <p className="small mb-0">
-                          After graduation, our adventures expanded beyond the campus. Together, we explored Vietnam not
-                          once, but twice, embracing the freedom of travel and the joy of discovering new places. We
-                          journeyed from Hue to Da Nang, Quang Nam to Quy Nhon, and onward to Phu Yen, Nha Trang, Da
-                          Lat, Ninh Thuan, Binh Thuan, and even the remote Phu Quy Island. Along the way, we met new
-                          friends, shared laughter around campfires, tried every local dish we could find, and collected
-                          countless memories in every town and city. Those trips were some of the happiest times of our
-                          lives — spontaneous, full of energy, and filled with stories we still laugh about to this day.
-                        </p>
-                      </div>
-                      <div className="row">
-                        <div className="col-auto position-relative">
-                          <p
-                            className="position-relative d-flex justify-content-center align-items-center bg-theme-auto border border-secondary border-2 opacity-100 rounded-circle m-0 p-0 z-1"
-                            style={{ width: "2rem", height: "2rem" }}
-                          >
-                            4
-                          </p>
-                          <hr className="position-absolute top-0 start-50 translate-middle-x border border-secondary h-100 z-0 opacity-100 m-0 rounded-4 shadow-none" />
-                        </div>
-                        <div className="col mt-1 mb-3 ps-0">
-                          <p className="fw-bold mb-2">💍 Journeying Toward Love and Happiness</p>
-                          <p className="small mb-0">
-                            Every step of our journey, from the innocence of secondary school to the excitement of
-                            university and the thrill of traveling across our beautiful country, has been a chapter in
-                            our shared story. It’s a story of growth, adventure, and unwavering love, a story that
-                            continues to unfold with every day we spend together.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* Wave Separator */}
-          <div className="svg-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="color-theme-svg no-gap-bottom">
-              <path
-                fill="currentColor"
-                fillOpacity={1}
-                d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-              />
-            </svg>
-          </div>
           {/* Wedding Date */}
-          <section className="bg-white-black pb-2" id="wedding-date">
+          <section className="bg-light-dark pb-2" id="wedding-date">
             <div className="container text-center">
               <h2 className="font-esthetic py-4 m-0" style={{ fontSize: "2.25rem" }}>
                 Joyful Moments
@@ -499,8 +305,8 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                 </div>
               </div>
               <p className="py-2 m-0" style={{ fontSize: "0.95rem" }}>
-                With joy and gratitude, we are pleased to announce and share the details of our upcoming celebrations{" "}
-                <br /> on November 30th 2025:
+                Với niềm vui và sự trân trọng, chúng mình xin gửi đến bạn thông tin về buổi lễ đặc biệt của chúng mình
+                <br /> vào ngày 28 tháng 12 năm 2025:
               </p>
               {/* Love animation */}
               <div className="position-relative">
@@ -524,13 +330,13 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                   <h2 className="font-esthetic m-0 py-2" style={{ fontSize: "2rem" }}>
                     Celebration Meal
                   </h2>
-                  <p style={{ fontSize: "0.95rem" }}>08:00 AM</p>
+                  <p style={{ fontSize: "0.95rem" }}>10:00 AM</p>
                 </div>
                 <div className="py-2" data-aos="fade-left" data-aos-duration={1500}>
                   <h2 className="font-esthetic m-0 py-2" style={{ fontSize: "2rem" }}>
                     Wedding Ceremony
                   </h2>
-                  <p style={{ fontSize: "0.95rem" }}>10:00 AM</p>
+                  <p style={{ fontSize: "0.95rem" }}>11:00 AM</p>
                 </div>
               </div>
               {/* Love animation */}
@@ -563,6 +369,17 @@ const Content = ({ name = "my friend" }: { name: string }) => {
               </div>
             </div>
           </section>
+          {/* Wave Separator */}
+          <div className="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="color-theme-svg no-gap-bottom">
+              <path
+                fill="currentColor"
+                fillOpacity={1}
+                d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+              />
+            </svg>
+          </div>
+
           {/* Gallery */}
           <section className="bg-white-black pb-5 pt-3" id="gallery">
             <div className="container">
@@ -578,115 +395,34 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                   data-bs-ride="carousel"
                 >
                   <div className="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={0}
-                      className="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={1}
-                      aria-label="Slide 2"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={2}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={3}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={4}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={5}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-one"
-                      data-bs-slide-to={6}
-                      aria-label="Slide 3"
-                    />
+                    {weddingImages.map((_, index) => {
+                      return (
+                        <button
+                          key={index}
+                          type="button"
+                          data-bs-target="#carousel-image-one"
+                          data-bs-slide-to={index}
+                          className="active"
+                          aria-current="true"
+                          aria-label={`Slide ${index + 1}`}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="carousel-inner rounded-4">
-                    <div className="carousel-item active">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03745.jpg"
-                        alt="image 1"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item active">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02042-2.jpg"
-                        alt="image 1"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02070.jpg"
-                        alt="image 2"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02236.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03649.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU02685.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03424.jpg"
-                        alt="image 3"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
+                    {weddingImages.map((src, index) => {
+                      return (
+                        <div className="carousel-item active" key={index}>
+                          <img
+                            src="./assets/images/placeholder.webp"
+                            data-src={src}
+                            alt={`image ${index + 1}`}
+                            className="d-block img-fluid cursor-pointer"
+                            onClick={openImageModal}
+                          />
+                        </div>
+                      );
+                    })}
                   </div>
                   <button
                     className="carousel-control-prev"
@@ -715,130 +451,34 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                   data-bs-ride="carousel"
                 >
                   <div className="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={0}
-                      className="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={1}
-                      aria-label="Slide 2"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={2}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={3}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={4}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={5}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={6}
-                      aria-label="Slide 3"
-                    />
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-image-two"
-                      data-bs-slide-to={7}
-                      aria-label="Slide 3"
-                    />
+                    {traditionalImages.map((_, index) => {
+                      return (
+                        <button
+                          key={index}
+                          type="button"
+                          data-bs-target="#carousel-image-two"
+                          data-bs-slide-to={index}
+                          className="active"
+                          aria-current="true"
+                          aria-label={`Slide ${index + 1}`}
+                        />
+                      );
+                    })}
                   </div>
                   <div className="carousel-inner rounded-4">
-                    <div className="carousel-item active">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03899.jpg"
-                        alt="image 4"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04059.jpg"
-                        alt="image 5"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04072.jpg"
-                        alt="image 6"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04565.jpg"
-                        alt="image 6"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU03972.jpg"
-                        alt="image 6"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04123.jpg"
-                        alt="image 6"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04231.jpg"
-                        alt="image 6"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="./assets/images/placeholder.webp"
-                        data-src="./assets/images/GAU04307.jpg"
-                        alt="image 6"
-                        className="d-block img-fluid cursor-pointer"
-                        onClick={openImageModal}
-                      />
-                    </div>
+                    {traditionalImages.map((src, index) => {
+                      return (
+                        <div className="carousel-item active" key={index}>
+                          <img
+                            src="./assets/images/placeholder.webp"
+                            data-src={src}
+                            alt={`image ${index + 1}`}
+                            className="d-block img-fluid cursor-pointer"
+                            onClick={openImageModal}
+                          />
+                        </div>
+                      );
+                    })}
                   </div>
                   <button
                     className="carousel-control-prev"
@@ -867,10 +507,10 @@ const Content = ({ name = "my friend" }: { name: string }) => {
           <section className="bg-white-black py-2 no-gap-bottom">
             <div className="container text-center">
               <h2 className="" style={{ fontSize: "1rem" }}>
-                We hope you can join us on this special day.
+                Chúng mình rất mong bạn có thể đến chung vui trong ngày đặc biệt này.
               </h2>
               <h2 className="pt-1" style={{ fontSize: "1rem" }}>
-                Your presence would be the greatest honor for our family.
+                Sự hiện diện của bạn sẽ là niềm vinh hạnh lớn nhất đối với gia đình chúng mình.
               </h2>
               <hr className="my-3" />
               <div className="row align-items-center justify-content-between flex-column pb-3">
@@ -878,7 +518,7 @@ const Content = ({ name = "my friend" }: { name: string }) => {
                   <small>
                     Build with
                     <i className="fa-solid fa-heart mx-1" />
-                    chungchamchi19
+                    from chungchamchi19
                   </small>
                 </div>
                 <div className="col-auto">
