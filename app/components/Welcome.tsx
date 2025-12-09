@@ -12,7 +12,7 @@ const Welcome = ({ name }: { name?: string }) => {
           </h2>
           <img
             src="./assets/images/placeholder.webp"
-            data-src="./assets/images/vvvv.jpg"
+            data-src="./assets/images/thumbnail.jpg"
             alt="background"
             className="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto object-top"
           />

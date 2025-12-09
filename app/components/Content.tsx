@@ -101,8 +101,8 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                 Thiệp Mời
               </h1>
               <img
-                src="./assets/images/vvvv.jpg"
-                data-src="./assets/images/vvvv.jpg"
+                src="./assets/images/thumbnail.jpg"
+                data-src="./assets/images/thumbnail.jpg"
                 alt="bg"
                 onClick={openImageModal}
                 className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer object-top"

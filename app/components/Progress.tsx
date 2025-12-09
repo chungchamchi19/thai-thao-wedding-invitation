@@ -14,7 +14,7 @@ const Progress = ({ name }: { name?: string }) => {
         <div className="d-flex flex-column width-loading text-center">
           <img
             src="./assets/images/placeholder.webp"
-            data-src="./assets/images/vvvv.jpg"
+            data-src="./assets/images/thumbnail.jpg"
             fetchPriority="high"
             className="img-fluid mb-3 mx-auto object-fit-cover opacity-0"
             alt="icon"
