@@ -309,7 +309,7 @@ export const guest = (() => {
     }
 
     const clearLoadingId = setInterval(async () => {
-      if (Date.now() - window.startTime > 5_000) {
+      if (Date.now() - window.startTime > 2_000) {
         clearTimeout(clearLoadingId);
         // wait until welcome screen is show.
         await util.changeOpacity(document.getElementById("welcome"), true);
