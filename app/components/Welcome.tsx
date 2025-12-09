@@ -17,7 +17,7 @@ const Welcome = ({ name }: { name?: string }) => {
             className="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto object-top"
           />
           <h2 className="font-esthetic mb-4" style={{ fontSize: "2.25rem" }}>
-            Việt Thái &amp; Thanh Thảo
+            Việt Thái &amp; Thu Thảo
           </h2>
           <div id="guest-name" data-message="Dear Mr./Mrs./Friends" />
           <button type="button" className="btn btn-light shadow rounded-4 mt-3 mx-auto" onClick={openInvitation}>

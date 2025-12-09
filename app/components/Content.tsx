@@ -70,7 +70,7 @@ const Content = ({ name = "bạn" }: { name: string }) => {
           </div>
           <div className="text-center p-4 bg-overlay-auto rounded-5">
             <h2 className="font-esthetic mb-4" style={{ fontSize: "2rem" }}>
-              Việt Thái &amp; Thanh Thảo
+              Việt Thái &amp; Thu Thảo
             </h2>
             <p className="m-0" style={{ fontSize: "1rem" }}>
               Chủ nhật, ngày 28 tháng 12 năm 2025
@@ -108,7 +108,7 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                 className="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer object-top"
               />
               <h2 className="font-esthetic my-4" style={{ fontSize: "2.25rem" }}>
-                Việt Thái &amp; Thanh Thảo
+                Việt Thái &amp; Thu Thảo
               </h2>
               <p className="my-2" style={{ fontSize: "1.25rem" }}>
                 Chủ nhật, ngày 28 tháng 12 năm 2025
@@ -235,7 +235,7 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                     }}
                   />
                   <h2 className="font-esthetic m-0" style={{ fontSize: "2.125rem" }}>
-                    Thanh Thảo
+                    Thu Thảo
                   </h2>
                   <p className="mt-3 mb-1" style={{ fontSize: "1.25rem" }}>
                     Cô âu

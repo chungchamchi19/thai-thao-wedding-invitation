@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         {/* Appearance */}
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="Wedding of Việt Thái &amp; Thanh Thảo" />
+        <meta name="apple-mobile-web-app-title" content="Wedding of Việt Thái &amp; Thu Thảo" />
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark light" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
