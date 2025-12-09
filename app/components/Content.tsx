@@ -214,7 +214,6 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                     width={40}
                     height={40}
                     fill="currentColor"
-                    D
                     className="opacity-50"
                     data-time={3000}
                     data-class="animate-love"
