@@ -237,7 +237,7 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                     Thu Thảo
                   </h2>
                   <p className="mt-3 mb-1" style={{ fontSize: "1.25rem" }}>
-                    Cô âu
+                    Cô Dâu
                   </p>
                 </div>
                 {/* Love animation */}
