@@ -95,7 +95,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         data-key="d9faced3377732b0edf19e90d1bde0cd5de04801c75eb41743"
         data-url="https://api.ulems.my.id/"
-        data-audio="./assets/music/pure-love-304010.mp3"
+        data-audio="./assets/music/i-do.mp3"
         data-confetti="true"
         data-time="2025-12-28 10:00:00"
         data-aos-easing="ease"

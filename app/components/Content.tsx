@@ -273,7 +273,7 @@ const Content = ({ name = "bạn" }: { name: string }) => {
           <section className="bg-light-dark pb-2" id="wedding-date">
             <div className="container text-center">
               <h2 className="font-esthetic py-4 m-0" style={{ fontSize: "2.25rem" }}>
-                Joyful Moments
+                Cùng Đếm Ngược Với Chúng Mình
               </h2>
               <div className="border rounded-pill shadow py-2 px-4 mt-2 mb-4">
                 <div className="row justify-content-center">
@@ -281,31 +281,31 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                     <p className="d-inline m-0 p-0" style={{ fontSize: "1.25rem" }} id="day">
                       0
                     </p>
-                    <small className="ms-1 me-0 my-0 p-0 d-inline">Days</small>
+                    <small className="ms-1 me-0 my-0 p-0 d-inline">Ngày</small>
                   </div>
                   <div className="col-3 p-1">
                     <p className="d-inline m-0 p-0" style={{ fontSize: "1.25rem" }} id="hour">
                       0
                     </p>
-                    <small className="ms-1 me-0 my-0 p-0 d-inline">Hours</small>
+                    <small className="ms-1 me-0 my-0 p-0 d-inline">Giờ</small>
                   </div>
                   <div className="col-3 p-1">
                     <p className="d-inline m-0 p-0" style={{ fontSize: "1.25rem" }} id="minute">
                       0
                     </p>
-                    <small className="ms-1 me-0 my-0 p-0 d-inline">Minutes</small>
+                    <small className="ms-1 me-0 my-0 p-0 d-inline">Phút</small>
                   </div>
                   <div className="col-3 p-1">
                     <p className="d-inline m-0 p-0" style={{ fontSize: "1.25rem" }} id="second">
                       0
                     </p>
-                    <small className="ms-1 me-0 my-0 p-0 d-inline">Seconds</small>
+                    <small className="ms-1 me-0 my-0 p-0 d-inline">Giây</small>
                   </div>
                 </div>
               </div>
               <p className="py-2 m-0" style={{ fontSize: "0.95rem" }}>
                 Với niềm vui và sự trân trọng, chúng mình xin gửi đến bạn thông tin về buổi lễ đặc biệt của chúng mình
-                <br /> vào ngày 28 tháng 12 năm 2025:
+                <br /> vào Chủ nhật ngày 28 tháng 12 năm 2025:
               </p>
               {/* Love animation */}
               <div className="position-relative">
@@ -327,15 +327,15 @@ const Content = ({ name = "bạn" }: { name: string }) => {
               <div className="overflow-x-hidden">
                 <div className="py-2" data-aos="fade-right" data-aos-duration={1500}>
                   <h2 className="font-esthetic m-0 py-2" style={{ fontSize: "2rem" }}>
-                    Celebration Meal
+                    Bữa Tiệc Chung Vui
                   </h2>
-                  <p style={{ fontSize: "0.95rem" }}>10:00 AM</p>
+                  <p style={{ fontSize: "0.95rem" }}>07:30 Sáng</p>
                 </div>
                 <div className="py-2" data-aos="fade-left" data-aos-duration={1500}>
                   <h2 className="font-esthetic m-0 py-2" style={{ fontSize: "2rem" }}>
-                    Wedding Ceremony
+                    Lễ Cưới
                   </h2>
-                  <p style={{ fontSize: "0.95rem" }}>11:00 AM</p>
+                  <p style={{ fontSize: "0.95rem" }}>11:00 Sáng</p>
                 </div>
               </div>
               {/* Love animation */}
@@ -356,6 +356,9 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                 </div>
               </div>
               <div className="py-2" data-aos="fade-down" data-aos-duration={1500}>
+                <h2 className="font-esthetic m-0 py-2" style={{ fontSize: "2rem" }}>
+                  Nhà Trai
+                </h2>
                 <a
                   href="https://maps.app.goo.gl/tdxFaUdeErroZW9e7"
                   target="_blank"
@@ -364,7 +367,21 @@ const Content = ({ name = "bạn" }: { name: string }) => {
                   <i className="fa-solid fa-map-location-dot me-2" />
                   View on Google Maps
                 </a>
-                <small className="d-block my-1">Dong Bang, Hung Yen</small>
+                <small className="d-block my-1">Cầu Vật, Đồng Bằng, Thái Bình</small>
+              </div>
+              <div className="py-2" data-aos="fade-down" data-aos-duration={1500}>
+                <h2 className="font-esthetic m-0 py-2" style={{ fontSize: "2rem" }}>
+                  Nhà Gái
+                </h2>
+                <a
+                  href="https://maps.app.goo.gl/ZyNLLxLurrDdewVT8"
+                  target="_blank"
+                  className="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"
+                >
+                  <i className="fa-solid fa-map-location-dot me-2" />
+                  View on Google Maps
+                </a>
+                <small className="d-block my-1">Tứ Kì Thượng, Tứ Kỳ, Hải Dương</small>
               </div>
             </div>
           </section>
@@ -384,7 +401,7 @@ const Content = ({ name = "bạn" }: { name: string }) => {
             <div className="container">
               <div className="border rounded-5 shadow p-3">
                 <h2 className="font-esthetic text-center py-2 m-0" style={{ fontSize: "2.25rem" }}>
-                  Gallery
+                  Album Ảnh
                 </h2>
                 <div
                   id="carousel-image-one"
