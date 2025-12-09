@@ -25,17 +25,17 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="color-scheme" content="dark light" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="canonical" href="https://thai-thao-wedding-invitation.vercel.app/" />
+        <link rel="canonical" href="https://thai-thao-thiep-moi.vercel.app/" />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="https://thai-thao-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
+          href="https://thai-thao-thiep-moi.vercel.app/assets/images/icon-192x192.png"
         />
         <link
           rel="apple-touch-icon"
           sizes="192x192"
-          href="https://thai-thao-wedding-invitation.vercel.app/assets/images/icon-192x192.png"
+          href="https://thai-thao-thiep-moi.vercel.app/assets/images/icon-192x192.png"
         />
         {/* Preconnect CDN */}
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />

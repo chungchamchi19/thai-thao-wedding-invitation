@@ -27,13 +27,13 @@ const Page = () => {
         <div className="flex flex-col gap-2">
           <label htmlFor="friend">Your friend name</label>
           <input
-            className="border border-white px-1 py-2"
+            className="border border-black px-1 py-2"
             id="friend"
             onChange={(e) => {
               setVal(e.target.value);
             }}
           ></input>
-          <button className="bg-black p-2" onClick={getLink}>
+          <button className="bg-black p-2 text-white" onClick={getLink}>
             Get Link
           </button>
         </div>

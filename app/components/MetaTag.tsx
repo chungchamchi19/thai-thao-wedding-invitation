@@ -11,10 +11,10 @@ interface MetaTagsProps {
 export default function MetaTags({
   title = "Wedding Invitation of Thái and Thảo",
   description = "Dear bạn, hope you're ready for something awesome!",
-  image = "https://thai-thao-wedding-invitation.vercel.app/assets/images/vvvv.jpg",
+  image = "https://thai-thao-thiep-moi.vercel.app/assets/images/vvvv.jpg",
 }: MetaTagsProps) {
   const pathname = usePathname();
-  const url = `https://thai-thao-wedding-invitation.vercel.app${pathname}`;
+  const url = `https://thai-thao-thiep-moi.vercel.app${pathname}`;
 
   return (
     <>
